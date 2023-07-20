@@ -1,12 +1,11 @@
 # UBIFS-DANAWA
-
+---
 Forensic Tools : Recovering deleted data on UBIFS and removing OOB spare area in some NAND chips.
 
 (Note: The tool only supports Python 3 and lzo files.)
 
 ## 1. How to extract deleted data from a Chip-off image on UBIFS.
 
----
 
 - If you don't have an image file (like a chip-off memory dump file, UART memory dump file, etc.), start by detaching the NAND chip from the hardware equipment and proceed with imaging. 
   - Remember, there's no single 'correct' way to generate a memory dump.
@@ -24,7 +23,6 @@ Forensic Tools : Recovering deleted data on UBIFS and removing OOB spare area in
 
 ## 2. History Logs
 
----
 
 - We will document and modifications made to the algorithm or source code.
     - 2023.06.05 First commit
