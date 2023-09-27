@@ -1,3 +1,4 @@
+import contextlib
 import math
 import lzo
 import zlib
@@ -293,6 +294,8 @@ if __name__ == '__main__':
         elif args.meta:
             meta_analyze()
         elif args.dumptree:
-            processblocks(f, args)
+            logging.info('Create Dump Tree in UBIFS')
+            with open("recovery\\dumptree.txt", 'w') as outfile, contextlib.redirect_stdout(outfile):
+                processblocks(f, args)
 
     logging.info('Complete!!!!')
