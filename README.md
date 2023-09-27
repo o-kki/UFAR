@@ -1,4 +1,4 @@
-## UFAR: UBIFS Forensic Analysis and Recovery 
+## UFAR: Ubifs Forensic Analysis and Recovery 
 ---
 Forensic Tools : Recovering deleted data on UBIFS and removing OOB spare area in some NAND chips.
 
