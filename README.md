@@ -1,4 +1,4 @@
-## UBIFS-DANAWA
+## UFAR: UBIFS Forensic Analysis and Recovery 
 ---
 Forensic Tools : Recovering deleted data on UBIFS and removing OOB spare area in some NAND chips.
 
@@ -20,8 +20,8 @@ Our tool fills this gap, this can do this!
   python main_recovery.py --file memoryfile.raw 
   ```
   - Here are some options you can use with the command:
-    - Use <b>'--meta' or '-m'</b> to search for deleted data centered on metadata.
-    - Use <b>'--data' or '-d'</b> to search for deleted node data centered on data nodes.
+    - Use <b>'--meta' or '-m'</b> to search for deleted files by metadata data.
+    <!-- - Use <b>'--data' or '-d'</b> to search for deleted files by node data by data nodes.-->
     - Include <b>'--dumptree' or '-t'</b> to output to the UBIFS file tree structure.
   - If UBIFS contains data nodes, they will be decompressed according to their compression type to recover deleted data.
 
@@ -31,3 +31,4 @@ Our tool fills this gap, this can do this!
 - We will document and modifications made to the algorithm or source code.
     - 2023.06.05 First commit
     - 2023.07.20 Write 'README.md'
+    - 2023.09.27 Modify dump tree related code
