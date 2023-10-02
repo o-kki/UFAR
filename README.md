@@ -17,10 +17,11 @@ Our tool fills this gap, this can do this!
 - How to Execute the Code
   - The input file should be a memory dump file (raw file, and only one file at a time).
   ```python
-  python main_recovery.py --file memoryfile.raw 
+  python main_recovery.py --file {memoryfile.raw} {-m or -c or -t}
   ```
   - Here are some options you can use with the command:
     - Use <b>'--meta' or '-m'</b> to search for deleted files by metadata data.
+    - Use <b>'--combination' or '-c'</b> to change the full dump image file to UART format.
     <!-- - Use <b>'--data' or '-d'</b> to search for deleted files by node data by data nodes.-->
     - Include <b>'--dumptree' or '-t'</b> to output to the UBIFS file tree structure.
   - If UBIFS contains data nodes, they will be decompressed according to their compression type to recover deleted data.
