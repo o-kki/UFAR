@@ -17,7 +17,7 @@ Our tool fills this gap, this can do this!
 - How to Execute the Code
   - The input file should be a memory dump file (raw file, and only one file at a time).
   ```python
-  python main_recovery.py --file {memoryfile.raw} {-m or -c or -t}
+  python main_recovery.py --file {image file.raw} {-m or -c or -t}
   ```
   - Here are some options you can use with the command:
     - Use <b>'--meta' or '-m'</b> to search for deleted files by metadata data.
